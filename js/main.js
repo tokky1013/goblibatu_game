@@ -223,6 +223,7 @@ function selectChessman(elem) {
 
         if (game.field[y][x] === null || game.field[y][x].playerNum !== game.getPlayer().playerNum) {
             if (game.placeChessman(x, y)) {
+                game.drawField();
                 game.nextTurn();
             }
             return;
