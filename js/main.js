@@ -96,7 +96,7 @@ class Game {
         if (this.selectedChessman === null) {
             return false;
         }
-        if (this.field[y][x] !== null && this.selectedChessman.chessman.size <= this.field[y][x]) {
+        if (this.field[y][x] !== null && this.selectedChessman.chessman.size <= this.field[y][x].size) {
             return false;
         }
 
